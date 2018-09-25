@@ -1,0 +1,18 @@
+import java.util.*;
+public class ArrayRotation {
+    public static void main(String[] arg)
+        {
+            Scanner sc=new Scanner(System.in)
+            int d=sc.nextInt();
+            int m=sc.nextInt();
+            List<Integer> mylist = new ArrayList<>();
+            for(int i=0;i<m;i++)
+                mylist.add(sc.nextInt());
+            Collections.rotate(mylist, d); //Left Rotation
+            //Collections.rotate(mylist, d+m); Right Rotation
+            System.out.println("Rotated List:");
+            for (Integer aMylist : mylist) {
+                System.out.print(aMylist + " ");
+            }
+        }
+    }
