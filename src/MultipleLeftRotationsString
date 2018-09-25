@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class MultipleLeftRotationsString {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+            String s=sc.next();String s1="",s2="",s3="";
+            int n=sc.nextInt();
+            s1=""+s.substring(n,s.length());
+            StringBuffer sb=new StringBuffer(s1);
+            s3=sb.reverse().toString();
+            s2=""+s.substring(0,n);
+            System.out.print(s1+""+s2);
+    }
+}
